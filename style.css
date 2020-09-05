@@ -6,7 +6,7 @@
 
 body {
   font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  background-color: #00134c;
+  background-color: rgb(0, 8, 50);
 }
 
 header {
@@ -16,16 +16,6 @@ header {
   overflow: hidden;
 }
 
-header::after {
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  left: 0;
-  top: 0;
-  z-index: 9;
-}
-
 a {
   text-decoration: none;
   color: #fff;
@@ -33,61 +23,81 @@ a {
 
 .foreground {
   position: absolute;
-  bottom: 0px;
+  width: 100%;
+  bottom: 0;
   right: 0;
   z-index: 8;
 }
 
 .lake {
   position: absolute;
-  bottom: 0px;
+  width: 100%;
+  bottom: 0;
   right: 0;
   z-index: 7;
 }
 
 .trees1 {
   position: absolute;
-  bottom: 0px;
+  width: 100%;
+  bottom: 0;
   right: 0;
-  z-index: 5;
+  z-index: 6;
 }
 
 .trees2 {
   position: absolute;
-  bottom: 0px;
+  width: 100%;
+  bottom: 0;
   right: 0;
-  z-index: 4;
+  z-index: 5;
 }
 
 .mountains1 {
   position: absolute;
-  bottom: 0px;
+  width: 100%;
+  bottom: 0;
   right: 0;
-  z-index: 3;
+  z-index: 4;
 }
 
 .mountains2 {
   position: absolute;
-  bottom: 0px;
+  width: 100%;
+  bottom: 0;
   right: 0;
-  z-index: 2;
+  z-index: 3;
 }
 
 .clouds {
   position: absolute;
-  bottom: 0px;
+  width: 100%;
+  bottom: 0;
+  right: 0;
+  z-index: 2;
+}
+
+.sun {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
   right: 0;
   z-index: 1;
 }
+
 .sky {
-  position: absolute;
-  right: 0;
-  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(0,234,255);
+  background: -moz-linear-gradient(0deg, rgba(0,234,255,1) 0%, rgba(0,118,234,1) 50%, rgba(0,2,213,1) 100%);
+  background: -webkit-linear-gradient(0deg, rgba(0,234,255,1) 0%, rgba(0,118,234,1) 50%, rgba(0,2,213,1) 100%);
+  background: linear-gradient(0deg, rgba(0,234,255,1) 0%, rgba(0,118,234,1) 50%, rgba(0,2,213,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#00eaff",endColorstr="#0002d5",GradientType=1);
 }
 
 .title {
   position: absolute;
-  z-index: 10;
+  z-index: 9;
   line-height: 3.5rem;
   top: calc(50% - 2rem);
   width: 100%;
@@ -111,7 +121,7 @@ a {
 
 .scrolldown {
   position: absolute;
-  z-index: 11;
+  z-index: 10;
   bottom: 20px;
   left: 50%;
   width: 30px;
